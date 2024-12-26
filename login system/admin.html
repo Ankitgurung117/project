@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Tutor Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h2>Admin Panel</h2>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#users">Users</a></li>
+            <li><a href="#tutors">Tutors</a></li>
+            <li><a href="#settings">Settings</a></li>
+            <li><a href="#logout">Logout</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Header -->
+        <div class="header">
+            <h1>Admin Dashboard</h1>
+            <button class="logout-btn">Logout</button>
+        </div>
+
+        <!-- Content Section -->
+        <div class="content">
+            <h2>Welcome, Admin!</h2>
+            <p>Use the sidebar to navigate through the dashboard.</p>
+
+            <!-- Users Section -->
+            <section id="users">
+                <h3>Users List</h3>
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                        <th>Actions</th>
+                    </tr>
+                    <!-- Dynamic data can be added here -->
+                    <tr>
+                        <td>1</td>
+                        <td>John Doe</td>
+                        <td>john@example.com</td>
+                        <td>Student</td>
+                        <td><button>Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jane Smith</td>
+                        <td>jane@example.com</td>
+                        <td>Tutor</td>
+                        <td><button>Delete</button></td>
+                    </tr>
+                </table>
+            </section>
+
+            <!-- Tutors Section -->
+            <section id="tutors">
+                <h3>Tutors List</h3>
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Subject</th>
+                        <th>Hourly Rate</th>
+                        <th>Actions</th>
+                    </tr>
+                    <!-- Dynamic tutor data can be added here -->
+                    <tr>
+                        <td>1</td>
+                        <td>Mike Johnson</td>
+                        <td>mike@example.com</td>
+                        <td>Math</td>
+                        <td>$40</td>
+                        <td><button>Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Alice Brown</td>
+                        <td>alice@example.com</td>
+                        <td>Physics</td>
+                        <td>$45</td>
+                        <td><button>Delete</button></td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </div>
+
+</body>
+</html>

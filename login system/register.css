@@ -1,0 +1,106 @@
+body{
+    background-color: rgb(67, 135, 236);
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    padding-top: 150px;
+}
+.wiserUniversity{
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin-left: 15%;
+    cursor: pointer;
+}
+.aboutUs{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 19%;
+    margin-top: 1%;
+    cursor: pointer;
+}
+
+.loginButton{
+    margin-left: 19%;
+    margin-top: 3%;
+    padding: 10px;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 20px 30px 20px 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.loginButton:hover{
+    margin-left: 19%;
+    margin-top: 3%;
+    padding: 10px;
+    font-weight: bold;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border-radius: 20px 30px 20px 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.halfPage{
+    width: 55%;
+    height: 607px;
+    right: 0px;
+    position: absolute;
+    top: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h2 {
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="phone"]{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+.registerButton {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.resisterButton:hover {
+    background-color: #45a049;
+}

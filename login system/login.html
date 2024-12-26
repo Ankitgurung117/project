@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="applynow.css">
+    <title>Wiser University / Apply Now </title>
+</head>
+<body>
+
+
+    <div class="wiserUniversity">
+        <img src="/images/coderwall.png" alt="" srcset=""> E-Tutor
+    </div>
+    <div class="aboutUs">  
+        Boost up your skills <br> with a new way of <br> learning <br>
+    </div>
+    <button type="button"  onclick="window.location.href='register.html';"  class="registerButton"><span>Register Now</span></button>
+   
+    
+    <div class="halfPage">
+        <div class="login-container">
+            <h2>Login</h2>
+            <form action="login1.php" method="post">
+                <div class="form-group">
+                    <label for="Email">Email:</label>
+                    <input type="text" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <input type="submit" name="Login" value="Login" onclick="validateLoginForm()">
+            </form>
+        </div>
+    </div>
+
+<script>
+    function validateLoginForm() {
+    // Get form elements
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
+
+    // Get error message elements
+    var emailError = document.getElementById('emailError');
+    var passwordError = document.getElementById('passwordError');
+
+    // Reset error messages
+    emailError.style.display = 'none';
+    passwordError.style.display = 'none';
+
+    var valid = true;
+
+    // Email validation: Check if the email is in a valid format
+    var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    if (!emailPattern.test(email)) {
+        emailError.style.display = 'inline';
+        valid = false;
+    }
+
+    // Password validation: Check if the password is empty
+    if (password.trim() === "") {
+        passwordError.style.display = 'inline';
+        valid = false;
+    }
+
+    // If form is not valid, prevent submission
+    return valid;
+}
+</script>
+</body>
+
+</html>
